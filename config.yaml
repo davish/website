@@ -36,6 +36,6 @@ menu:
     - identifier: blog
       name: Blog
       url: /posts
-    - identifier: resume
-      name: Resume
-      url: /resume
+    # - identifier: resume
+    #   name: Resume
+    #   url: /resume
