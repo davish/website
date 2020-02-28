@@ -1,0 +1,41 @@
+baseurl: /
+languageCode: en-us
+theme: hello-friend-ng
+
+params:
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04 -0700"
+
+  disableReadOtherPosts: false
+  description: "Davis Haupt's Website"
+  keywords: "homepage, blog"
+  images: [""]
+
+  contentTypeName: posts
+
+  defaultTheme: light
+
+languages:
+  en:
+    title: Davis Haupt
+    subtitle: Website
+    keywords: ""
+    copyright: "Davis Haupt"
+    readOtherPosts: "Read other posts"
+
+    params:
+      logo:
+        logoText: "/home/davish $"
+        logoHomeLink: /
+      homeSubtitle: Student @ Penn, Developer ∈ Free Time
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: /posts
+    - identifier: resume
+      name: Resume
+      url: /resume
