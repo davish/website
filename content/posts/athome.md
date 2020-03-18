@@ -37,6 +37,11 @@ version of Penn Course Alert with some new and helpful features before
 Penn's course registration starts, and that deadline should help keep me
 motivated and moving.
 
+4. Improving this site. This only just went up a week ago or so, and right
+now is still using a pretty vanilla theme. I'm planning on adding some
+features like a project showcase and spicing up the theme a bit, with some
+graphics and color.
+
 
 [1]: https://www.thedp.com/article/2020/03/penn-coronavirus-online-classes-spring-semester
 [2]: https://reasonml.github.io/
