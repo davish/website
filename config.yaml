@@ -17,6 +17,12 @@ params:
 
   defaultTheme: light
 
+  social:
+    - name: github
+      url: "https://github.com/davish/"
+    - name: linkedin
+      url: "https://linkedin.com/in/davishaupt/"
+
 languages:
   en:
     title: Davis Haupt
