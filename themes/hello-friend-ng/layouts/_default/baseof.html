@@ -4,7 +4,7 @@
         {{ partial "head.html" . }}
     </head>
 
-    <body class="{{ if $.IsHome -}} homepage dark-theme {{- end -}}">
+    <body class="{{ if .IsHome -}} homepage {{- end -}} {{ if ne .Section `posts` }} dark-theme {{ end }}">
         <div class="container">
             {{ partial "header.html" . }}
 

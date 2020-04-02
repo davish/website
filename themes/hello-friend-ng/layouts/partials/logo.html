@@ -4,7 +4,7 @@
             <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
         {{ else }}
             <span class="logo__mark">></span>
-            <span class="logo__text">/davish/{{ if .IsHome }}home{{ else }}{{if eq .Section "posts"}}blog{{ else }}{{.Section}}{{ end }}{{ end }}/ $</span>
+            <span class="logo__text">/davish/{{ if .IsHome }}home{{ else }}{{if eq .Section "posts"}}blog{{ else }}{{if ne .Section ""}}{{.Section}}{{else}}{{lower .Title}}{{end}}{{ end }}{{ end }}/ $</span>
             <span class="logo__cursor" style=
                   "{{ with.Site.Params.Logo.logoCursorDisabled }}visibility:hidden;{{ end }}
                    {{ with.Site.Params.Logo.logoCursorColor    }}background-color:{{ . }};{{ end }}
