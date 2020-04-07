@@ -18,7 +18,7 @@ necessarily have time for in a busy college schedule, and learning new
 skills. Here's a good a place as any to jot down some of my ideas, and
 hopefully it'll keep me somewhat accountable.
 
-1. Re-make [When2Meet](when2meet.com). It's a super simple and well-liked
+1. Re-make [When2Meet](https://when2meet.com). It's a super simple and well-liked
 tool on campus, and I think it would be a cool experience to see how I'd
 make it, and if I could find any ways to improve on it while keeping its
 simplicity. I've been interested in functional programming lately, so I
