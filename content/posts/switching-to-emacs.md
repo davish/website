@@ -21,10 +21,10 @@ A few months ago, I switched my Python development to VSCode, where I had
 already been doing frontend JS/TypeScript dev for a few years. It started up
 faster than PyCharm and had extensions for most things, but I never really felt comfortable.
 After learning vim keybindings this summer, I would've definitely liked to also
-be using the keyboard more often. Primarily, though, I wanted to try out [org-mode](https://orgmode.org/).
-I'd heard really cool things about it, and wanted to try it out. It would also
-give me the opportunity to try out emacs as a primary editor, which in the midst
-of quarantine would be a bit of excitement.
+be using the keyboard more often. Primarily, though, I'd heard really cool
+things about [org-mode](https://orgmode.org/), and wanted to try it out.
+Full support of org-mode is only present in emacs, which in the midst
+of quarantine would be a bit of excitement to check out.
 
 At the recommendation of a friend, I decided to use
 [doom-emacs](https://github.com/hlissner/doom-emacs) instead of starting a
