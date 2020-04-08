@@ -2,6 +2,11 @@ baseurl: /
 languageCode: en-us
 theme: hello-friend-ng
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   dateform: "Jan 2, 2006"
   dateformShort: "Jan 2"
@@ -35,6 +40,7 @@ languages:
       logo:
         logoText: "/home/davish $"
         logoHomeLink: /
+        logoCursorAnimate: 1.75s
       homeSubtitle: Student @ Penn, Developer ∈ Free Time
 
 menu:
@@ -42,6 +48,9 @@ menu:
     - identifier: blog
       name: Blog
       url: /posts
+    - identifier: about
+      name: About
+      url: /about
     # - identifier: resume
     #   name: Resume
     #   url: /resume

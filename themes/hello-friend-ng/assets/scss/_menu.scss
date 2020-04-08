@@ -1,7 +1,6 @@
 .menu {
   z-index: 9999;
 
-
   @media #{$media-size-phone} {
     position: absolute;
     top: 50px;
@@ -46,16 +45,28 @@
   }
 
   a {
-    display: inline-block;
-    margin-right: 15px;
+    position: relative;
     text-decoration: none;
+  }
 
-    &:hover {
-      text-decoration: underline;
-    }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -0.25rem;
+    left: 0;
+    background-color: $light-color;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
 
-    &:last-of-type {
-      margin-right: 0;
+    .dark-theme & {
+      background-color: $dark-color;
     }
+  }
+
+  a:hover:before {
+    visibility: visible;
+    width: 100%;
   }
 }
