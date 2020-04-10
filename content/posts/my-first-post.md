@@ -6,6 +6,7 @@ toc: false
 images:
 tags:
   - untagged
+summary: "Hello, world!"
 ---
 
 Hello, world! I just bought a domain name today ([davi.sh](https://davi.sh)) and am setting up the site.

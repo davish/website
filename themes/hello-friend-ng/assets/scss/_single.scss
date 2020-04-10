@@ -4,6 +4,7 @@
   text-align: left;
   padding: 20px;
   margin: 20px auto;
+  margin-top: 0;
 
   @media #{$media-size-tablet} {
     max-width: 600px;
@@ -102,6 +103,10 @@
       flex-direction: column;
     }
   }
+}
+
+.blog {
+  font-family: 'Merriweather', serif;
 }
 
 .pagination {

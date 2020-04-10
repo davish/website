@@ -6,6 +6,7 @@ toc: false
 images:
 tags:
   - untagged
+summary: "Moving home (and online)."
 ---
 
 Last Wednesday, Penn [extended Spring Break by a week and moved classes 
@@ -29,9 +30,9 @@ bit. I've been enjoying frontend development more lately, and it might
 be cool to add another skill to my toolbox on this front, especially
 with how many product ideas are mobile-first.
 
-3. Keep working on [Penn Labs](pennlabs.org) products. With students
+3. Keep working on [Penn Labs](https://pennlabs.org) products. With students
 scattered around the globe, tools like [Penn Course 
-Alert](penncoursealert.com) and [Penn Course Plan](penncourseplan.com) are
+Alert](https://penncoursealert.com) and [Penn Course Plan](https://penncourseplan.com) are
 going to be even more critical to students. We're hoping to release a new
 version of Penn Course Alert with some new and helpful features before
 Penn's course registration starts, and that deadline should help keep me

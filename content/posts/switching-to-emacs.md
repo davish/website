@@ -7,6 +7,7 @@ images:
   - post/images/emacs-screenshot.png
 tags:
   - untagged
+summary: "How I learned to stop worrying and love the keyboard."
 ---
 
 My personal editor journey has been kind of strange. I started off using Sublime
