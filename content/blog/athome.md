@@ -6,7 +6,7 @@ toc: false
 images:
 tags:
   - untagged
-summary: "Moving home (and online)."
+description: "Moving home (and online)."
 ---
 
 Last Wednesday, Penn [extended Spring Break by a week and moved classes 

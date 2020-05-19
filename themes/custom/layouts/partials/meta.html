@@ -49,13 +49,12 @@
 {{end }}
 
 <meta property="og:type" content="article" />
-<meta property="article:publisher" content="{{ .Site.Params.facebook }}" />
 <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
 <meta property="article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
 
 {{ with .Site.Params.Author }}
-<meta property="og:article:author" content="{{humanize . }}" />
-<meta property="article:author" content="{{humanize . }}" />
-<meta name="author" content="{{humanize . }}" />
+<meta property="og:article:author" content="{{ . }}" />
+<meta property="article:author" content="{{ . }}" />
+<meta name="author" content="{{ . }}" />
 {{ end }}
 {{ end }}
