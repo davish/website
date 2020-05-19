@@ -1,13 +1,11 @@
 <nav class="navbar">
     <a href="/" aria-label="home">
-    <ul class="prompt">
-        <li>
+    <ul class="prompt" aria-hidden="true">
         <span class="prompt-mark">&gt;</span>
         <span class="prompt-text">
             ~/{{ if or (eq .Kind "section") (eq .Kind "page") }}{{ .Section }}{{ else if ne .Kind "home"}}{{ .Section}}/{{ .Title }}{{ end }}
         </span>
         <span class="prompt-cursor"></span>
-        </li>
     </ul>
     </a>
     <ul class="links">
