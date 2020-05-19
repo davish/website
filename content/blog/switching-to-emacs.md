@@ -50,7 +50,7 @@ productive. I enabled a few more Doom modules, like a terminal emulator
 (`term`) and a file explorer (`treemacs`). Here's where I'm at, about a day and
 a half in:
 
-![Configured Emacs Screenshot](/posts/images/emacs-screenshot.png)
+![Configured Emacs Screenshot](/blog/images/emacs-screenshot.png)
 
 You can see the VSCode inspiration pretty clearly here! Another thing that's
 cool about Doom is that in a lot of ways, it's an entire configuration platform.

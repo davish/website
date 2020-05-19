@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ with .Content }}
+<section>
+    <div>{{ . }}</div>
+</section>
+{{ end }}
+<section class="list">
+    <ul>
+    {{ range .Pages }}
+        <li class="item">
+            <div>
+                <a href="{{.Permalink}}" class="item-title">{{ .Title }}</a>
+                <span class="item-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+            <p>{{.Summary}}</p>
+        </li>
+    {{ end }}
+    </ul>
+</section>
+
+{{ end }}

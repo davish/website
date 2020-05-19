@@ -1,0 +1,42 @@
+@import "variables";
+
+section {
+  width: 80%;
+  max-width: 750px;
+}
+
+.list {
+  width: 80%;
+  max-width: 750px;
+
+  ul {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .item {
+      border-bottom: 1px grey dashed;
+      padding-bottom: .5rem;
+      &-title {
+        font-size: 1.5rem;
+        margin: 5px 0 5px 0;
+        color: $text-color;
+      }
+      &-date {
+        flex-shrink: 0;
+        margin-left: 1rem;
+        @include dimmed;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 12px 0;
+        text-decoration: none;
+      }
+      p {
+          margin: 0;
+      }
+    }
+  }
+}

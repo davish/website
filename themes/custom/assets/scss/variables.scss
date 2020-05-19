@@ -1,0 +1,13 @@
+$blog-link-color: #0366d6;
+$accent-color: $blog-link-color;
+$accent-color: #2abd61;
+$text-color: #111;
+$border-color: $text-color;
+$background-color: rgba(27,31,35,.05);
+
+$media-size-phone: "(max-width: 684px)";
+$media-size-tablet: "(max-width: 900px)";
+
+@mixin dimmed {
+    opacity: .6;
+}

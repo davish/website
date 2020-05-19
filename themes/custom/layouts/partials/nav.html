@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <a href="/">
+    <ul class="prompt">
+        <span class="prompt-mark">&gt;</span>
+        <span class="prompt-text">
+            ~/{{ if or (eq .Kind "section") (eq .Kind "page") }}{{ .Section }}{{ else if ne .Kind "home"}}{{ .Section}}/{{ .Title }}{{ end }}
+        </span>
+        <span class="prompt-cursor"></span>
+    </ul>
+    </a>
+    <ul class="links">
+        <li><a href="https://github.com/davish">GitHub</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="post">
+    {{ if .Params.toc }}
+        <div id="toc">
+            <h4>Contents</h4>
+            {{ .TableOfContents }}
+        </div>
+    {{ end }}
+    <article>
+        <h1 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        </h1>
+        <div class="post-info top">
+            <div>
+                {{ .Date.Format "Jan 2 2006" }}
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                {{ .Page.ReadingTime }} minutes
+            </div>
+        </div>
+
+
+        <hr />
+
+        {{ with .Params.Cover }}
+          <img src="{{ . }}" class="post-cover" />
+        {{ end }}
+
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+    </article>
+    <div class="post-info" style="display: block">
+        {{ partial "tags.html" . }}
+    </div>
+    <hr />
+    <div class="pagination">
+        {{ with .PrevInSection }}
+        <a class="pagination-item" href="{{ .Permalink }}">
+            <span class="pagination-label">Previous Post</span>
+            <span class="pagination-title">{{ .Title }}</span>
+        </a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a class="pagination-item" href="{{ .Permalink }}">
+            <span class="pagination-label">Next Post</span>
+            <span class="pagination-title">{{ .Title }}</span>
+        </a>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}
