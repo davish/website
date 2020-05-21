@@ -3,6 +3,24 @@
 body {
   font-family: "Inter", sans-serif;
   color: $text-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+  a {
+    margin: .25rem;
+    color: $text-color;
+    transition: .1s;
+    &:hover {
+        color: $accent-color;
+        text-decoration: none;
+      }
+  }
 }
 
 hr {
