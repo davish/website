@@ -5,13 +5,16 @@ body {
   color: $text-color;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 footer {
-  text-align: center;
   padding-bottom: 1rem;
+}
+
+.links {
+  text-align: center;
   a {
     margin: .25rem;
     color: $text-color;
