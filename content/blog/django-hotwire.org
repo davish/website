@@ -15,18 +15,18 @@ Building a web app is always going to be a complex endeavour. SPA view libraries
 Generally, when building a React app, you get any dynamic data through a loosely coupled JSON API (in my personal preference, probably written with [[https://www.django-rest-framework.org][Django REST Framework]]). If you're using a web framework like Django or Ruby on Rails, then you're going to have a lot of complexity and business logic on both the frontend and backend. Whenever you add a feature, you need to ask yourself where it should be added. The loose coupling between parts that may very well be written in different languages means that it's really difficult to share code, and even if you're doing something as simple as validating a form, you'll probably end up with a decent amount of duplicated business logic, a big no-no if you follow the [[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRY principle]]!
 ** Data Fetching Boilerplate
 Loosely-coupled APIs present another challenge when building web apps: the boilerplate that comes along with getting the data out of your database and displayed in a browser. The general process for an SPA follows this outline:
-1. [User] Navigates to a page, submits a form, clicks on a resource.
-2. [Client] Send a request, along with any route parameters and arguments, to a backend API endpoint.
+1. [User] Navigates to a page, submits a form, or clicks on a resource.
+2. [Browser] Send a request, along with any route parameters and arguments, to a backend API endpoint.
 3. [Server] API endpoint is called, fetches data from the database using the parameters in the request.
 4. [Server] After retrieving data from the database, marshal that data into JSON to be sent back to the client.
-5. [Client] Receive JSON from request, de-marshal the JSON into data structures that the web app can understand.
-   For a React app, this would include passing the data as props to each component that uses it for rendering itself
+5. [Browser] Receive JSON from request, de-marshal the JSON into data structures that the web app can understand.
+   For a React app, this would include passing the data as props to each component that uses the data to for render itself.
 
 And that's only the happy path! In the case of a validation error, for example, the server would return a 400 response with some JSON details, and the client again would need to catch that error, and render it properly. It really is a lot of boilerplate for any given request.
 
 There are frontend libraries like [[https://swr.vercel.app][SWR]] which factor out as much boilerplate as possible and encourage declarative patterns for your own data fetching, but "thick client" web apps will always need to marshal data to JSON on the server, and un-marshal to some view-able format on the client.
-* Managing Complexity in 2020
-There's a bunch of different solutions to these problems, and they fall broadly into two separate categories.
+* Managing SPA Complexity in 2020
+There's a bunch of different solutions to these problems for those who still want to provide an SPA experience, and they fall broadly into two separate categories.
 ** Frontend-First: The JAMStack
 In recent years, there's been a big push towards the [[https://jamstack.org/what-is-jamstack/][JAMStack]]: pushing all your complexity and business logic onto your frontend, and relying mostly on commodified API services for your backend work. JSON is still the lingua franca here, but reliance on pre-built backends as a service for different functionalities, along with query languages like GraphQL, means that there isn't any backend boilerplate handled by developers. All the complexity and business logic is pushed to the client-side, which alleviates worries about duplication of concerns.
 
