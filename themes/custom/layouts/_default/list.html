@@ -1,22 +1,22 @@
 {{ define "main" }}
 
 {{ with .Content }}
-<section>
+<section class="content">
     <div>{{ . }}</div>
 </section>
 {{ end }}
 <section class="list">
-    <ul>
+    <table>
     {{ range .Pages }}
-        <li class="item">
-            <div>
+        <tr class="item">
+            <td class="item-date">{{ .Date.Format "Jan 2, 2006" }}</td>
+            <td>
                 <a href="{{.Permalink}}" class="item-title">{{ .Title }}</a>
-                <span class="item-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-            </div>
-            <p>{{.Description}}</p>
-        </li>
+                <p class="item-description">{{.Description}}</p>
+            </td>
+        </tr>
     {{ end }}
-    </ul>
+    </table>
 </section>
 
 {{ end }}

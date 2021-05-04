@@ -3,7 +3,7 @@
 #+slug: Labs Looking Back
 #+draft: false
 #+tags[]: upenn college pennlabs
-#+description: I just finished writing a year-in-review blog post for the Penn Labs blog. This is my record of my personal learnings from a year as director of the club.
+#+description: My record of personal learnings from a year as director of Penn Labs.
 
 I just finished writing [[https://pennlabs.org/blog/year-in-review-19-20/][a year-in-review blog post]] for the Penn Labs blog. For
 some context, [[https://pennlabs.org][Penn Labs]] is a student-run software development group that builds
