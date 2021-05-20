@@ -1,6 +1,6 @@
 #+title: PiClock: Waking Up to the Unix Philosophy
 #+date: 2021-05-20
-#+draft: true
+#+draft: false
 #+tags[]: raspberrypi electronics unix 3dprinting
 #+description: A forray into electronics, Unix and embedded computing.
 
