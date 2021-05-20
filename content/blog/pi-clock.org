@@ -2,7 +2,7 @@
 #+date: 2021-05-20
 #+draft: false
 #+tags[]: raspberrypi electronics unix 3dprinting
-#+description: A forray into electronics, Unix and embedded computing.
+#+description: A foray into electronics, Unix and embedded computing.
 
 
 I built a clock! [[https://github.com/davish/pi-clock][It runs Linux]]. Sounds like quite the over-engineering project, but I learned a ton along the way and was able to flex some muscles that had been lying dormant for a while. I write a decent amount of code, but I hadn't worked on an electronics project in years and had never really embarked on a 3D modeling or design project outside the classroom.
