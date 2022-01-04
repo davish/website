@@ -1,11 +1,10 @@
 {{ define "main" }}
 <section class="hero">
-    <h1>Davis Haupt</h1>
-    <h4>Student @ Penn, Developer ∈ Free Time</h4>
-    {{ partial "links.html" }}
-    <hr>
+  <h1>Davis Haupt</h1>
+  <h4></h4>
+  <!--<h4>Student @ Penn, Developer ∈ Free Time</h4>-->
+  {{ partial "links.html" }}
+  <hr />
 </section>
-<section id="bio">
-    {{ .Content }}
-</section>
+<section id="bio">{{ .Content }}</section>
 {{ end }}

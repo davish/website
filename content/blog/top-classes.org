@@ -3,6 +3,7 @@
 #+draft: false
 #+tags[]: upenn lists college
 #+description: A look back at what I've learned in the classroom.
+#+aliases[]: /blog/2021/04/top-classes/
 
 
 I'm graduating from college in May. Over my four years working towards my degree, I've taken about forty different courses. As I enter the last month of school, I thought it would be a good time to look back and reflect on the courses that I enjoyed the most. I've picked out five classes, and instead of trying to make any absolute ranking of them, I just decided to present them in the order they were taken, and try and express how each one impacted me.

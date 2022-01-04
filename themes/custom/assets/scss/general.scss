@@ -1,7 +1,8 @@
-@import 'variables';
+@import "variables";
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
+    "Book Antiqua", Georgia, serif;
   color: $text-color;
   display: flex;
   flex-direction: column;
@@ -16,13 +17,13 @@ footer {
 .links {
   text-align: center;
   a {
-    margin: .25rem;
+    margin: 0.25rem;
     color: $text-color;
-    transition: .1s;
+    transition: 0.1s;
     &:hover {
-        color: $accent-color;
-        text-decoration: none;
-      }
+      color: $accent-color;
+      text-decoration: none;
+    }
   }
 }
 
@@ -32,29 +33,29 @@ hr {
 }
 
 a {
-    color: $accent-color;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: $accent-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 code {
-  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $background-color;
   padding: 1px 6px;
   margin: 0 2px;
   border-radius: 5px;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 pre {
   background: #212020;
   padding: 20px;
   border-radius: 8px;
-  font-size: .95rem;
+  font-size: 0.95rem;
   overflow: auto;
 
   @media #{$media-size-phone} {

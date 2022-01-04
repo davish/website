@@ -1,0 +1,6 @@
+#+title: Rediscovering a Hobby
+#+date: 2020-07-20T23:03:10-04:00
+#+draft: true
+#+tags[]: untagged
+
+I moved back down to Philadelphia last week. On my last night at home with my parents, I found myself in a youtube rabbit hole, just watching videos of people building RC planes and drones and all sorts of weird things. It got me thinking about what to actually spend time on when I got down to philly. I have some projects that I've barely started, some Penn Labs work I should get working on,
