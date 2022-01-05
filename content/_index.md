@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Homepage
 ---
 
 **Hi there!** I'm Davis. I'm really passionate about programming languages, spaceflight and elections.
