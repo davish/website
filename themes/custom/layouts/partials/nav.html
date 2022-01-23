@@ -1,14 +1,18 @@
 <nav class="navbar">
-    <a href="/" aria-label="home">
+  <a
+    href="{{ if .IsHome }}/{{ else }}{{ .Parent.Permalink }}{{ end }}"
+    aria-label="home"
+  >
     <ul class="prompt" aria-hidden="true">
-        <span class="prompt-mark">&gt;</span>
-        <span class="prompt-text">
-            ~/{{ if or (eq .Kind "section") (eq .Kind "page") }}{{ .Section }}{{ else if ne .Kind "home"}}{{ .Section}}/{{ .Title }}{{ end }}
-        </span>
-        <span class="prompt-cursor"></span>
+      <span class="prompt-mark">&gt;</span>
+      <span class="prompt-text">
+        ~/{{ if (eq .Kind "section") }}{{ .Section }}{{ else if ne .Kind
+        "home"}}{{.File.Path}}{{ end }}
+      </span>
+      <span class="prompt-cursor"></span>
     </ul>
-    </a>
-    <ul class="links">
-        <li><a href="/blog">Blog</a></li>
-    </ul>
+  </a>
+  <ul class="links">
+    <li><a href="/blog">Blog</a></li>
+  </ul>
 </nav>

@@ -6,7 +6,7 @@ tags: [obsidian, workflow, series]
 description: "Why Obsidian works for me."
 ---
 
-This is part zero of five. As articles are published, you'll be able to jump to them here: (<a href='{{< relref "obsidian-1.md">}}'>1</a>, 2, 3, 4).
+This is part zero of five. As articles are published, you'll be able to jump to them here: (<a href='{{< relref "obsidian-one.md">}}'>1</a>, 2, 3, 4).
 
 ---
 
