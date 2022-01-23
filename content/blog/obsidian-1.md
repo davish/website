@@ -7,9 +7,11 @@ description: "Part 1 of my series on my Obsidian workflow"
 ---
 
 Plugins:
-- [Obsidian Tasks](https://github.com/schemar/obsidian-tasks)
+- [Tasks](https://github.com/schemar/obsidian-tasks)
 - [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
+- [Minimal Theme](https://github.com/kepano/obsidian-minimal)
+
 External Tools:
 - [Siri Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334)
 
