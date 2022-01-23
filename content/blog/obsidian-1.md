@@ -78,7 +78,7 @@ These two queries let me see everything I should handle today: overdue tasks "ro
 ### Capturing Tasks
 Viewing and managing existing tasks is only half the picture. I want to be able to capture tasks when they come into my head so I don't have to keep focusing on them as my day continues around me. My catch-all location for new tasks is in my daily note. Obsidian Tasks has a command shortcut for creating a new task, with a nice modal that lets me enter due dates similar to Todoist. As a lightweight replacement for [org-habit](https://orgmode.org/manual/Tracking-your-habits.html), I keep repeating tasks in their own notes so I can track how often I complete them. I also will add tasks that relate to specific topics directly in-line to notes, relying on my agenda queries to slurp them up properly and link back to the context that I in which created them. 
 
-When I'm on my computer or actively using Obsidian on mobile, this works great. But I'm [[Digital Mindfulness|actively trying to spend less time idly on my devices]]. There's lots of times where I've realized I need to capture a task but I'm not actively using Obsidian. What then?
+When I'm on my computer or actively using Obsidian on mobile, this works great. But <a href='{{< relref "digital-mindfulness.md" >}}'>I'm actively trying to spend less time idly on my devices</a>. There's lots of moments where I've realized I need to capture a task but I'm not actively using Obsidian. What then?
 
 ### Siri Shortcuts
 I've never used Siri Shortcuts before, but [pawalt](https://pawa.lt) shared a shortcut with me that takes text input (or voice input from Siri) and appends it to a file in his vault. Here's my slightly modified version:
