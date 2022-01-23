@@ -6,8 +6,9 @@
     <ul class="prompt" aria-hidden="true">
       <span class="prompt-mark">&gt;</span>
       <span class="prompt-text">
-        ~/{{ if (eq .Kind "section") }}{{ .Section }}{{ else if ne .Kind
-        "home"}}{{ with .File }}{{ .Path }}{{ end }}{{ end }}
+        ~/{{if .Scratch.Get "navPath"}}{{.Scratch.Get "navPath"}}{{else}}{{ if
+        (eq .Kind "section") }}{{ .Section }}{{ else if ne .Kind "home"}}{{ with
+        .File }}{{ .Path }}{{ end }}{{ end }}{{ end }}
       </span>
       <span class="prompt-cursor"></span>
     </ul>

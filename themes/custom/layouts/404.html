@@ -1,0 +1,16 @@
+<html lang="en">
+  {{- partial "head.html" . -}}
+  <body>
+    {{ .Scratch.Set "navPath" "404.html" }} {{- partial "nav.html" . -}}
+    <div id="content">
+      <section class="hero">
+        <h1>Sorry! I can't find that page for you.</h1>
+      </section>
+
+      <section id="bio">
+        Try browsing <a href="/blog">the blog</a> or going <a href="/">home</a>.
+      </section>
+    </div>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>
