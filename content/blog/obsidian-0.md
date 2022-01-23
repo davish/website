@@ -1,12 +1,12 @@
 ---
-title: "Thinking with Obsidian (Part Zero)"
+title: "Thinking with Obsidian"
 date: 2022-01-20T23:00:34-05:00
 draft: false
 tags: [obsidian, workflow, series]
 description: "Why Obsidian works for me."
 ---
 
-This is part zero of five. As articles are published, you'll be able to jump to them here: (1, 2, 3, 4).
+This is part zero of five. As articles are published, you'll be able to jump to them here: (<a href='{{< relref "obsidian-1.md">}}'>1</a>, 2, 3, 4).
 
 ---
 
