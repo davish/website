@@ -6,17 +6,34 @@
 </section>
 {{ end }}
 <section class="list">
-    <table>
-    {{ range .Pages }}
-        <tr class="item">
-            <td class="item-date">{{ .Date.Format "Jan 2, 2006" }}</td>
-            <td>
-                <a href="{{.Permalink}}" class="item-title">{{ .Title }}</a>
-                <p class="item-description">{{.Description}}</p>
-            </td>
-        </tr>
+    {{ range .Paginator.Pages }}
+    <div>
+        <div>
+            <h4 class="post-title">
+                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            </h4>
+            <div class="post-info top">
+                <div>
+                    {{ .Date.Format "Jan 2 2006" }}
+                </div>
+                <!-- <div>
+                    {{ partial "tags.html" . }}
+                </div> -->
+            </div>
+        </div>
+        {{ if in .RawContent "<!--more-->" -}}
+            {{ .Summary | safeHTML }}
+        {{ else -}}
+            <p>{{ .Summary | safeHTML }}</p>
+        {{ end }}
+        {{ if .Truncated }}
+        <p class="read-more">
+            <a href="{{ .RelPermalink }}">Read More…</a>
+        </p>
+        {{ end }}
+    </div>
     {{ end }}
-    </table>
 </section>
+{{ partial "pagination.html" . }}
 
 {{ end }}

@@ -1,8 +1,8 @@
 @import "variables";
 
 section {
-  width: 80%;
-  max-width: 750px;
+  width: 60%;
+  max-width: 650px;
 }
 .content {
   h1 {
@@ -18,46 +18,64 @@ section {
   margin-top: 2.5em;
 }
 
-.list {
-  width: 80%;
-  max-width: 750px;
+ul.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
 
-  tr {
-    flex-grow: 1;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    .item {
-      // border-bottom: 1px grey dashed;
-      padding-bottom: 0.5rem;
-      &-title {
-        font-family: "Inter", sans-serif;
-        // font-size: 1.5rem;
-        font-size: 1.1rem;
-        // margin: 5px 0 5px 0;
-        color: $text-color;
-        font-weight: 600;
-        // font-weight: 600;
-      }
-      &-date {
-        font-family: "Inter", sans-serif;
-        flex-shrink: 0;
-        // margin-left: 1rem;
-        // color: $accent-color;
-        @include dimmed;
-        // margin-right: 1rem;
-        width: 12ch;
-        vertical-align: top;
-      }
-      display: flex;
-      justify-content: start;
-      align-items: baseline;
-      padding: 12px 0;
-      text-decoration: none;
+  li {
+    flex: 1;
+    
+    border-width: 1px;
+    border-right-width: 0;
+    border-color: lightgray;
+    border-style: solid;
 
-      &-description {
-        margin-top: 0;
-      }
+    &:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
     }
+    &:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-right-width: 1px;
+    }
+    a, span {
+      padding: 0.75em;
+      display: block;
+      width: 100%;
+    }
+    a {
+      color: $accent-color;
+    }
+    span {
+      color: gray;
+    }
+    
+    &.active {
+      a {
+        cursor: default;
+        &:hover {
+          text-decoration: none;
+        }
+        color: white;
+      }
+      background-color: $accent-color;
+    }
+  }
+}
+
+.list {
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  .read-more {
+    text-align: right;
+    line-height: 1em;
   }
 }

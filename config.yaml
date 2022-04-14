@@ -3,6 +3,7 @@ baseurl: https://davi.sh/
 languageCode: en-us
 theme: custom
 enableRobotsTXT: true
+paginate: 5
 
 permalinks:
   blog: /blog/:year/:month/:filename/
