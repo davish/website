@@ -17,7 +17,7 @@
 
     {{ if $paginator.HasPrev }}
     <li class="page-item prev">
-      <a href="{{ $paginator.Prev.URL }}"><i>&lt;</i></a>
+      <a href="{{ $paginator.Prev.URL }}" aria-label="Previous Page" class="page-link" role="button"><i>&lt;</i></a>
     </li>
     {{ end }}
 
@@ -64,7 +64,7 @@
       <!-- Output page numbers. -->
       {{ if eq ($.Scratch.Get "page_number_flag") true }}
         <li class="page-item{{ if eq . $paginator }} active{{ end }}">
-          <a {{ if ne . $paginator }}href="{{ .URL }}"{{ end }}>{{ .PageNumber }}</a>
+          <a {{ if ne . $paginator }}href="{{ .URL }}"{{ end }} aria-label="Page {{.PageNumber}}" class="page-link" role="button">{{ .PageNumber }}</a>
         </li>
       {{ end }}
 
@@ -72,7 +72,7 @@
 
     {{ if $paginator.HasNext }}
     <li class="page-item next">
-      <a href="{{ $paginator.Next.URL }}"><i>&gt;</i></a>
+      <a href="{{ $paginator.Next.URL }}" aria-label="Next Page" class="page-link" role="button"><i>&gt;</i></a>
     </li>
     {{ end }}
 
