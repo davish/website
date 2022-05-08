@@ -258,4 +258,4 @@ It all comes back to data access patterns and how much you're comfortable going 
 
 Each of these systems has its benefits and downsides depending on the kind of application you're building and the kind of data you're looking to handle.
 
-These days, all the dop databases are multi-model. Postgres can store documents in jsonb fields and act like a document database. MongoDB can join multiple collections together in a query and act like a relational database. It's a question of going with the grain and against the grain in whatever system you choose.
+These days, all the top databases are multi-model. Postgres can store documents in jsonb fields and act like a document database. MongoDB can join multiple collections together in a query and act like a relational database. It's a question of going with the grain and against the grain in whatever system you choose.
