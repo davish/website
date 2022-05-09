@@ -1,7 +1,7 @@
 #+title: Top Classes in Undergrad
 #+date: 2021-04-10
 #+draft: false
-#+tags[]: upenn lists college
+#+tags[]: upenn lists college advice
 #+description: A look back at what I've learned in the classroom.
 #+aliases[]: /blog/2021/04/top-classes-in-undergrad/
 
