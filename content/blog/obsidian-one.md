@@ -3,7 +3,8 @@ title: "Task Management in Obsidian"
 date: 2022-01-22T20:20:05-05:00
 draft: false
 tags: [obsidian, series, workflow, task-management]
-description: "Part 1 of my series on my Obsidian workflow"
+description: "A walkthrough of how I manage my day-to-day tasks in Obsidian."
+highlight: true
 ---
 
 Obsidian is first and foremost a Markdown editor with first-class support for internal links between notes. But just because it wasn't built as a to-do app, doesn't mean it can't become one. Community plugins and external tools have made Obsidian work just as well for me as any task management app I've used in the past. As an added bonus, because I'm keeping notes about my day and what I'm reading, it's easy for me to keep tasks in the context of the thoughts that spawned them.

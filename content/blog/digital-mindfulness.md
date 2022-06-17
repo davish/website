@@ -3,7 +3,8 @@ title: "Digital Mindfulness"
 date: 2022-01-04T17:19:42-05:00
 draft: false
 tags: [mindfulness, reflection]
-description: ""
+description: "I'm not normally one for new year's resolutions, but this year I'm trying to be more mindful and intentional about how I use digital technology and the Internet."
+highlight: true
 ---
 
 I'm not normally one for new year's resolutions. Mostly because I've found it hard to make lasting changes to my habits in the past. This year, though, I've got a pretty open-ended one: to be more mindful and intentional about how I use digital technology and the Internet.<!--more-->

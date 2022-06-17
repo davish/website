@@ -7,4 +7,24 @@
   <hr />
 </section>
 <section id="bio">{{ .Content }}</section>
+<section id="highlights">
+  <h2>selected blog posts</h2>
+  <div>
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ $highlightsMD := where $pages "Params.highlight" true }}
+    {{ $highlightsOrg := where $pages "Params.highlight" "true" }}
+    {{ $highlights := union $highlightsMD $highlightsOrg}}
+    <ul>
+      {{ range first 2 $highlights}}
+        {{ partial "highlight.html" . }}
+      {{ end }}
+    </ul>
+    <ul>
+      {{ range first 2 (after 2 $highlights)}}
+        {{ partial "highlight.html" . }}
+      {{end}}
+    </ul>
+  </div>
+  
+</section>
 {{ end }}
