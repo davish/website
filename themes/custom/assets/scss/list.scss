@@ -22,13 +22,14 @@ ul.pagination {
   display: flex;
   list-style: none;
   padding: 0;
+  font-family: Inter, sans-serif;
 
   li {
     flex: 1;
     
     border-width: 1px;
     border-right-width: 0;
-    border-color: lightgray;
+    border-color: $accent-color;
     border-style: solid;
 
     &:first-child {
@@ -46,7 +47,7 @@ ul.pagination {
       width: 100%;
     }
     a {
-      color: $accent-color;
+      // color: $accent-color;
     }
     span {
       color: gray;
