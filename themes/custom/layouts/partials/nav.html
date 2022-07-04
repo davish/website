@@ -1,7 +1,7 @@
 <nav class="navbar">
   <a
     href="{{ if .IsHome }}/{{ else }}{{ .Parent.Permalink }}{{ end }}"
-    aria-label="home"
+    aria-label="{{ if .IsHome }}home{{ else }}up{{ end }}"
   >
     <ul class="prompt" aria-hidden="true">
       <span class="prompt-mark">&gt;</span>
